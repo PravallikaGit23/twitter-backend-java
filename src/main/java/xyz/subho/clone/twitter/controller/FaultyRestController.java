@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FaultyRestController {
-
+//comment added by pravallika
   @GetMapping("/exception")
   public ResponseEntity<String> makeRequestToInvokeException() {
     throw new RuntimeException("Hola! From the FaultyRestController");
